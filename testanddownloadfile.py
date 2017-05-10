@@ -1,10 +1,12 @@
 #!/usr/bin/python3
+# check the file exist or not with try/except
+# if failed, show the reason;otherwise go ahead to download
 import time
 import requests
 
 res = requests.get('https://automatetheboringstuff.com/files1/rj.txt')
 
-Downlotry:
+try:
     res.raise_for_status()
 except Exception as exc:
     print('Download failed with error: %s' % exc)
