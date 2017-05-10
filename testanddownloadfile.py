@@ -11,14 +11,14 @@ try:
 except Exception as exc:
     print('Download failed with error: %s' % exc)
 
-playFile = open('download.txt', 'wb')
-for chunk in res.iter_content(100000):
-    playFile.write(chunk)
-playFile.close()
+if res.status_code == requests.codes.ok:
+    playFile = open('download.txt', 'wb')
+    for chunk in res.iter_content(100000):
+        playFile.write(chunk)
+    playFile.close()
 
-with open('download.txt') as f:
-    cont = f.read()
-    print(cont)
-
+    with open('download.txt') as f:
+        cont = f.read()
+        print(cont)
 time.sleep(2)
 print('\nThe end')
