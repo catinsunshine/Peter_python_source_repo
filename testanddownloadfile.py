@@ -20,5 +20,6 @@ if res.status_code == requests.codes.ok:
     with open('download.txt') as f:
         cont = f.read()
         print(cont)
+
 time.sleep(2)
 print('\nThe end')
