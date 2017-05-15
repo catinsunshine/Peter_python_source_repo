@@ -8,7 +8,7 @@ import bs4
 today = datetime.datetime.now()
 print('Today is', today.date().isoformat())
 print('\n')
-# headers will simulate browser to accept to avoid https 403 error
+# headers will simulate browser to access and avoid https 403 error
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko\
 /20100101 Firefox/23.0'}
 stockpool = {'Walmart': 'WMT', 'Coca-Cola': 'KO', 'Reynolds American': 'RAI',
