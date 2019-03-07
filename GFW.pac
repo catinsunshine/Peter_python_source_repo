@@ -41,9 +41,9 @@ function FindProxyForURL(url, host)
         ,'pao-pao.net'
         ,'greatfire.org'
         ,'inbox.google.com'
-		    ,'aws.amazon.com'
-		    ,'automatetheboringstuff.com'
-		    ,'repl.it'
+	,'aws.amazon.com'
+	,'automatetheboringstuff.com'
+	,'repl.it'
         ,'wsj.com'
     ];
 
